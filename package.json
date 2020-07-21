@@ -1,0 +1,25 @@
+{
+  "name": "mal_js",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000m\u0000a\u0000l\u0000_\u0000j\u0000s\u0000",
+  "main": "step0_repl.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "readline-sync": "^1.4.10",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukio0/mal_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yukio0/mal_js/issues"
+  },
+  "homepage": "https://github.com/yukio0/mal_js#readme"
+}
