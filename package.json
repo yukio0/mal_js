@@ -1,12 +1,13 @@
 {
   "name": "mal_js",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000m\u0000a\u0000l\u0000_\u0000j\u0000s\u0000",
+  "description": "",
   "main": "step0_repl.js",
   "dependencies": {
     "fs": "^0.0.1-security",
     "readline-sync": "^1.4.10",
-    "require": "^2.4.20"
+    "require": "^2.4.20",
+    "uglify-js": "^3.10.0"
   },
   "devDependencies": {},
   "scripts": {

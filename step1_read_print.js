@@ -14,7 +14,7 @@ function PRINT(str){
 }
 
 function rep(str){
-    return PRINT(EVAL(READ(str)));
+    PRINT(EVAL(READ(str)));
 }
 
 while(true){
@@ -22,5 +22,5 @@ while(true){
     if(input === null)
         break;
     else
-        console.log(rep(input));
+    process.stdout.write(input + "\n");
 }
