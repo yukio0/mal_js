@@ -17,9 +17,12 @@ function rep(str){
     return PRINT(EVAL(READ(str)));
 }
 
+let test = readLineSync.getRawInput();
+
 while(true){
     let input = readLineSync.question("user> ");
-    if(input === null)
+    let isEOF = (readLineSync.getRawInput() === "\x00" || readLineSync.getRawInput() === "\x1A");
+    if(isEOF)
         break;
     else
         console.log(rep(input));

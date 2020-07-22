@@ -1,8 +1,10 @@
 'use strict';
-let readLineSync = require("readline-sync");
+const readLineSync = require("readline-sync");
+const reader = require('./reader.js');
+const printer = require('./printer');
 
 function READ(str){
-    return str;
+    return reader.read_str(str);
 }
 
 function EVAL(str){
@@ -10,17 +12,20 @@ function EVAL(str){
 }
 
 function PRINT(str){
-    return str;
+    return printer.pr_str(str);
 }
 
 function rep(str){
-    PRINT(EVAL(READ(str)));
+    return PRINT(EVAL(READ(str)));
 }
+
+let test = readLineSync.getRawInput();
 
 while(true){
     let input = readLineSync.question("user> ");
-    if(input === null)
+    let isEOF = (readLineSync.getRawInput() === "\x00" || readLineSync.getRawInput() === "\x1A");
+    if(isEOF)
         break;
     else
-    process.stdout.write(input + "\n");
+        console.log(rep(input));
 }
